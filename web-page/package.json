@@ -1,0 +1,33 @@
+{
+  "name": "pm_22_14",
+  "version": "1.0.0",
+  "description": "variant 14",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo"
+  },
+  "author": "Bohdana",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^3.0.2"
+  },
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bohdashga/Lab_1.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Bohdashga/Lab_1/issues"
+  },
+  "homepage": "https://github.com/Bohdashga/Lab_1#readme"
+}

@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Simple Sidebar - Start Bootstrap Template</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/font-glyphicons.css">
+  <!-- Custom styles for this template -->
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div  id="sidebar-wrapper">
+      <div class="sidebar-heading"> <img src="photo/logo.png"></div>
+      <div class="list-group list-group-flush">
+          <a href="#" class="list-group-item list-group-item-action active" ><p style="margin-left: 0px"> <img src="photo/home.png"><span class="vidtext" style="margin-left: 10px; color: white">Home</span></p></a>
+          <a href="#" class="list-group-item list-group-item-action "><p> <span  class="glyphicon glyphicon-time"  aria-hidden="true"></span><span class="vidtext">Time Management</span></p></a>
+        <a href="#" class="list-group-item list-group-item-action "><p>
+            <span class="glyphicon glyphicon-inbox" aria-hidden="true"></span><span class="vidtext">Inbox</span></p></a>
+        <a href="#" class="list-group-item list-group-item-action"><p>
+            <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span><span class="vidtext">Calendar</span></p></a>
+        <a href="#" class="list-group-item list-group-item-action"><p>
+            <span class="glyphicon glyphicon-stats" aria-hidden="true"></span><span class="vidtext">Analytics</span></p></a>
+        <a href="#" class="list-group-item list-group-item-action"><p>
+            <span class="glyphicon glyphicon-cog" aria-hidden="true"></span><span class="vidtext">Settings</span></p></a>
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+       <span class="glyphicon glyphicon-search" aria-hidden="true" style="color: #8d9bab;margin-left: 20px;"></span>
+               <form class="form-inline">
+  
+  <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search"
+    aria-label="Search">
+</form>
+             
+
+      
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            
+                <li class="nav-item active">
+              <a class="nav-link" style="margin-top: -7px;" ><img src="photo/bell.png"> </a>
+            </li>
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               Filip J.
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+              <li class="nav-item">
+              <a class="nav-link" style="margin-top: -7px; margin-bottom:-9px; " ><img src="photo/F.png"></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container-fluid">
+          <h5>Hi Filip,</h5>
+          <p style="color:#8d9bab">Checkout your latest projects and their progress.</p>
+        <div class="line">
+            <div class="row child">
+            <div class="col child1" >
+                 <h4>Wavy Lines</h4>
+              <p style="color:#8d9bab">Working Hours</p>
+                </div>
+                <div class="col child2"> <div class="dropdown">
+  <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"   onclick="loadData()">
+
+    THIS WEEK
+  </button>
+<!--  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">-->
+<!--    <a class="dropdown-item" href="#">Action</a>-->
+<!--    <a class="dropdown-item" href="#">Another action</a>-->
+<!--    <a class="dropdown-item" href="#">Something else here</a>-->
+<!--  </div>-->
+</div>
+                </div>
+            </div>
+             <div class="row first">
+<div class="col-sm-12"  >
+        
+      <div class="col first">    
+        <div class="graphic">
+  
+                  <canvas id="myChart" width="1190" height="305" ></canvas>
+          </div>
+         
+</div>
+        </div>
+          </div>
+           <div class="row parent">
+            <div class="col infa" >
+                 <h5>Crunch some Numbers</h5>
+          <p style="color:#8d9bab">See how your projects are progressing via the new statistics engine.</p>
+                </div>
+               <div class="col text">
+                   <p style="margin-top: 10px; color:#8d9bab; padding-right: 15px">Timeline:</p>
+
+                    <div class="dropdown">
+  <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      
+    7 days
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div>
+</div>
+                </div>
+            </div> 
+
+          </div>
+    <div class="line">
+        <div class="row main">
+        <div class="col-sm-4"> 
+            
+            <div class="row one1">
+                <div class="col-5">
+                    <div>
+                        <h4> 96</h4>
+                        <p>Working Hours</p>
+                    </div>
+                </div>
+                <div class="col-7">
+                <img src="photo/graf2.png">
+                </div>
+            </div>
+            <div class="row one2">
+                <div class="col-5"><h4> 1,204</h4>
+                <p>Conversations</p></div>
+                <div class="col-7">
+            <img src="photo/graf1.png">
+                </div></div>
+            <div class="row one3">
+                <div class="col-5">
+                <h4> 7</h4>
+                <p>People</p>
+                </div>
+                <div class="col-7">
+                    <img src="photo/graf3.png"></div>
+            </div> 
+            </div>
+            
+            <div class="col-sm-8">
+                 <div class="row cat">
+            <div class="col cat1" >
+                 <h4>Daily Progress</h4>
+              <p style="color:#8d9bab">Working Hours</p>
+                </div>
+                <div class="col cat2"> <div class="dropdown">
+  <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      
+    THIS WEEK
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div>
+</div>
+                </div>
+            </div>
+             <div class="row two">
+                 
+                <div class="col graphic">
+                    <canvas id="graf1" width="1180" height="590" ></canvas>
+                </div> 
+        </div>
+            </div>
+              
+          </div>
+        <h5>Current Progress</h5>
+        <p style="color:#8d9bab">This table will show you how your current projects are behaving.</p>
+      </div>
+        <div class="line">
+            
+    <div class="row maintable">
+            <div class="col-1 img">
+           <img src="photo/photo2.png">      
+        </div>
+        <div class="col-2">
+            <h5>Project Title</h5>
+            <p style="color:#8d9bab"> Design & Development</p>
+        </div>
+        <div class="col-4 tilo">
+            <p style="color:#8d9bab">Last updated<span class="colortext"> Today at 4:24 AM </span><span class="linis"></span><span class="glyphicon glyphicon-time" aria-hidden="true"></span>  26:30<img src="photo/photo5.png"> 624 </p>
+        </div>
+        
+        <div class="col-3">
+            <div class="progress"> <div class="progress-bar " role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div> </div>
+        </div>
+            </div>
+    <div class="row second">
+        <div class="col-1 img">
+           <img src="photo/photo1.png">      
+        </div>
+        <div class="col-2">
+            <h5>Project Title</h5>
+            <p style="color:#8d9bab"> Design & Development</p>
+        </div>
+        <div class="col-4 tilo">
+            <p style="color:#8d9bab">Last updated<span class="colortext"> Today at 4:24 AM </span><span class="linis"></span><span class="glyphicon glyphicon-time" aria-hidden="true"></span>  26:30<img src="photo/photo5.png"> 624 </p>
+        </div>
+        
+        <div class="col-3">
+            <div class="progress"> <div class="progress-bar " role="progressbar" style="width: 75%; background-color: #4bcf99" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div> </div>
+        </div>
+    </div>
+    <div class="row second">
+        <div class="col-1 img">
+           <img src="photo/photo3.png">      
+        </div>
+        <div class="col-2">
+            <h5>Project Title</h5>
+            <p style="color:#8d9bab"> Design & Development</p>
+        </div>
+        <div class="col-4 tilo">
+            <p style="color:#8d9bab">Last updated<span class="colortext"> Today at 4:24 AM </span><span class="linis"></span><span class="glyphicon glyphicon-time" aria-hidden="true"></span>  26:30<img src="photo/photo5.png"> 624 </p>
+        </div>
+        
+        <div class="col-3">
+            <div class="progress"> <div class="progress-bar " role="progressbar" style="width: 50%; background-color:#59c2e6" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div> </div>
+        </div>
+    </div>
+    <div class="row second1">
+        <div class="col-1 img">
+           <img src="photo/photo4.png">      
+        </div>
+        <div class="col-2">
+            <h5>Project Title</h5>
+            <p style="color:#8d9bab"> Design & Development</p>
+        </div>
+        <div class="col-4 tilo">
+            <p style="color:#8d9bab">Last updated<span class="colortext"> Today at 4:24 AM </span><span class="linis"></span><span class="glyphicon glyphicon-time" aria-hidden="true"></span>  26:30<img src="photo/photo5.png"> 624 </p>
+        </div>
+        
+        <div class="col-3">
+            <div class="progress"> <div class="progress-bar " role="progressbar" style="width: 35%; background-color:#fe974b" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div> </div>
+        </div>
+    </div>
+           <div class="row parent">
+            <div class="col infa" >
+                 <h5>Crunch some Numbers</h5>
+          <p style="color:#8d9bab">See how your projects are progressing via the new statistics engine.</p>
+                </div>
+               <div class="col text">
+                   <p style="margin-top: 10px; color:#8d9bab; padding-right: 15px">Timeline:</p>
+
+                    <div class="dropdown">
+  <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      
+    7 days
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div>
+</div>
+                </div>
+            </div>      
+            </div>
+         
+          <div class="line">
+            <div class="row lastrow">
+                 
+                    <div class="col-sm-4 last1">
+                        <h4>Client Hours</h4>
+                        <p style="color: #8d9bab; font-size: 13px;">Working Hours</p>
+                        <div class="graphic">
+                        <canvas id="bagel" width=":100%"></canvas>
+                        </div>
+                        <div class="text" style="padding-left: 30px; margin-top: 35px;display: flex">
+                            <div class="dot" style="background-color:#44b2d7">
+
+                        </div>
+                            <div><p style="color:#727f8c">Sweet & Simple LTD.
+                                <span class="let"style="margin-left: 70px" >37:45 h</span>
+                            </p> </div>
+                        </div>
+                        <div class="text" style="padding-left: 30px; display: flex">
+                            <div class="dot" style="background-color:#59c2e6">
+                            </div>
+                            <div><p style="color:#727f8c">Nike Running Shoes
+                                <span class="let"style="margin-left: 75px" >16:22 h</span>
+                            </p> </div>
+                        </div>
+                        <div class="text" style="padding-left: 30px; display: flex">
+                        <div class="dot" style="background-color:#71d0f1">
+                        </div>
+                        <div><p style="color:#727f8c">Some Cool Company
+                            <span class="let"style="margin-left: 77px" >3:14 h</span>
+                        </p> </div>
+                    </div>
+                        <div class="text" style="padding-left: 30px; display: flex">
+                        <div class="dot" style="background-color:#96e4ff">
+                        </div>
+                        <div><p style="color:#727f8c">Some Cooler company
+                            <span class="let"style="margin-left: 57px" >26:18 h</span>
+                        </p> </div>
+
+
+
+
+
+
+
+
+                        </div>
+                </div>
+    
+        <div class="col-sm-4 last2">
+            <div class="avatar"> <img src="photo/avatar.png">
+                <h5>Jake Appleseed</h5>
+                <p style=" color:#727f8c">London, UK</p>
+            </div>
+            <table>
+                <tr>
+                    <td>
+                        <div class="weak">Working Hours</div>
+                        <div class="strong">14 hours</div>
+                    </td>
+                    <td>
+                        <div class="weak">Ammount Total</div>
+                        <div class="strong">$ 6,269</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="weak">Overdue</div>
+                        <div class="strong">$ 829</div>
+                    </td>
+                    <td>
+                        <div class="weak">% overall work</div>
+                        <div class="strong">48%</div>
+                    </td>
+                </tr>
+            </table>
+<!--            <img style="margin-bottom: 40px" src="photo/table.png">-->
+            <p  style="text-align: center">
+                <a href="#">Send Invoice</a>
+            </p>
+                </div>
+    <div class="col-sm-4 last3">
+        <h4>Total Overdue</h4>
+        <p style=" color:#727f8c">I need Dollars</p>
+        <h2> $14,220</h2>
+                <canvas id="lastgraf" width="300px" height="167px"></canvas>
+         <p>
+             <a href="#">Export PDF</a>
+                 </p>
+                </div>
+                        
+              </div>
+              
+          </div>
+          <script src="/assets/js/Chart.min.js"></script>
+<script src="/assets/js/jquery-1.12.0.min.js"></script> <!--Optional-->
+
+
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
+        <script src="21.js"></script>
+          </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+  <!-- Bootstrap core JavaScript -->
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    
+  </script>
+  <script>
+
+      var data = function() {
+          var jsonTemp = null;
+          $.ajax({
+              async: true,
+              type: "Get",
+              url: "data/data.json",
+              dataType: "json",
+              success: function(data) {
+                  jsonTemp = data.newsItems;
+              },
+              error: function(){
+                  alert("json not found");
+              }
+          });
+          return jsonTemp;
+      }();
+
+      function loadData() {
+          const xhr = new XMLHttpRequest();
+
+          xhr.onreadystatechange = function() {
+              if (xhr.readyState == 4) {
+                  if (xhr.status == 200) {
+                      alert(xhr.responseText);
+                  }
+                  if (xhr.status == 404) {
+                      alert('Ups...error :(');
+                  }
+              }
+          }
+
+          xhr.open('get', 'data/data.json', true);
+          xhr.send();
+      }
+
+
+  </script>
+
+</body>
+
+</html>

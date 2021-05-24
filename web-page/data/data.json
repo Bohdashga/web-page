@@ -1,0 +1,25 @@
+{
+  "newsItems": [
+
+    {
+      "id": 1,
+      "left": "Sweet & Simple LTD.",
+      "right": "37:45 h"
+    },
+    {
+      "id": 2,
+      "left": "Nike Running Shoes",
+      "right": "16:22 h "
+    },
+    {
+      "id": 3,
+      "left": "Some Cool Company",
+      "right": " 3:14 h"
+    },
+    {
+      "id": 4,
+      "left": "Some Cooler company",
+      "right": "26:18 h"
+    }
+  ]
+}
